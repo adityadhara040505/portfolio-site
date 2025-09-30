@@ -1,0 +1,64 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A202C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#codeGrad)"/>
+  
+  <!-- Terminal window -->
+  <rect x="30" y="40" width="340" height="220" rx="8" fill="#1a1a1a" stroke="#4A5568" stroke-width="1"/>
+  
+  <!-- Terminal header -->
+  <rect x="30" y="40" width="340" height="30" rx="8" fill="#2D3748"/>
+  <circle cx="50" cy="55" r="4" fill="#FF5F56"/>
+  <circle cx="70" cy="55" r="4" fill="#FFBD2E"/>
+  <circle cx="90" cy="55" r="4" fill="#27CA3F"/>
+  
+  <!-- Code lines -->
+  <text x="50" y="90" font-family="Consolas, monospace" font-size="12" fill="#61DAFB">#include &lt;stdio.h&gt;</text>
+  <text x="50" y="110" font-family="Consolas, monospace" font-size="12" fill="#61DAFB">#include &lt;stdlib.h&gt;</text>
+  
+  <text x="50" y="135" font-family="Consolas, monospace" font-size="12" fill="#F7931E">int main() {</text>
+  <text x="70" y="155" font-family="Consolas, monospace" font-size="12" fill="#98D8C8">printf("Welcome to SharpCoder!");</text>
+  <text x="70" y="175" font-family="Consolas, monospace" font-size="12" fill="#98D8C8">return 0;</text>
+  <text x="50" y="195" font-family="Consolas, monospace" font-size="12" fill="#F7931E">}</text>
+  
+  <!-- Cursor -->
+  <rect x="95" y="188" width="2" height="12" fill="#61DAFB">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Learning progress indicator -->
+  <g transform="translate(280, 80)">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#4A5568" stroke-width="3"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#61DAFB" stroke-width="3" 
+            stroke-dasharray="150" stroke-dashoffset="37.5"
+            transform="rotate(-90)">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="0;360" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#61DAFB" text-anchor="middle">75%</text>
+  </g>
+  
+  <!-- Quiz elements -->
+  <g transform="translate(280, 140)">
+    <rect x="-25" y="-10" width="50" height="20" rx="10" fill="#48BB78"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Quiz</text>
+  </g>
+  
+  <!-- Chat bot indicator -->
+  <g transform="translate(320, 180)">
+    <circle cx="0" cy="0" r="15" fill="#667eea"/>
+    <text x="0" y="4" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">🤖</text>
+    <circle cx="15" cy="-10" r="3" fill="#00ff88">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#61DAFB" text-anchor="middle">SharpCoder Platform</text>
+</svg>

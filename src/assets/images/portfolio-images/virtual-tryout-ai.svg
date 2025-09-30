@@ -1,0 +1,66 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#gradient1)"/>
+  
+  <!-- Human silhouette -->
+  <g transform="translate(100, 50)">
+    <!-- Head -->
+    <circle cx="100" cy="40" r="25" fill="#ffffff" opacity="0.9"/>
+    <!-- Body -->
+    <rect x="85" y="65" width="30" height="80" rx="15" fill="#ffffff" opacity="0.9"/>
+    <!-- Arms -->
+    <rect x="60" y="75" width="20" height="60" rx="10" fill="#ffffff" opacity="0.9"/>
+    <rect x="120" y="75" width="20" height="60" rx="10" fill="#ffffff" opacity="0.9"/>
+    <!-- Legs -->
+    <rect x="90" y="145" width="20" height="70" rx="10" fill="#ffffff" opacity="0.9"/>
+  </g>
+  
+  <!-- Virtual clothing overlay -->
+  <g transform="translate(120, 80)">
+    <!-- Shirt -->
+    <rect x="65" y="40" width="50" height="60" rx="8" fill="url(#gradient2)" opacity="0.8"/>
+    <!-- Pants -->
+    <rect x="70" y="100" width="40" height="80" rx="5" fill="#4a5568" opacity="0.8"/>
+  </g>
+  
+  <!-- AI indicators -->
+  <g transform="translate(20, 20)">
+    <circle cx="0" cy="0" r="3" fill="#00ff88">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="8" r="2" fill="#00ff88">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="8" cy="20" r="2.5" fill="#00ff88">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Neural network lines -->
+  <g opacity="0.6">
+    <line x1="50" y1="100" x2="150" y2="120" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="60" y1="150" x2="160" y2="140" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="80" y1="80" x2="180" y2="100" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">AI Fashion</text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.8">Virtual Try-On Technology</text>
+</svg>

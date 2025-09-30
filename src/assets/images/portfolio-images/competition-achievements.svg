@@ -1,0 +1,104 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="spotlightGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#hackGrad)"/>
+  <rect width="400" height="300" fill="url(#spotlightGrad)"/>
+  
+  <!-- Main trophy -->
+  <g transform="translate(200, 80)">
+    <!-- Trophy base -->
+    <rect x="-15" y="50" width="30" height="15" rx="3" fill="#8B4513"/>
+    <rect x="-12" y="40" width="24" height="10" rx="2" fill="#CD853F"/>
+    
+    <!-- Trophy cup -->
+    <path d="M-20,40 Q-20,10 0,10 Q20,10 20,40 L15,40 Q15,20 0,20 Q-15,20 -15,40 Z" fill="#FFD700"/>
+    
+    <!-- Trophy handles -->
+    <path d="M-20,25 Q-30,25 -30,35 Q-30,45 -20,45" stroke="#FFD700" stroke-width="3" fill="none"/>
+    <path d="M20,25 Q30,25 30,35 Q30,45 20,45" stroke="#FFD700" stroke-width="3" fill="none"/>
+    
+    <!-- Trophy shine -->
+    <ellipse cx="-8" cy="25" rx="3" ry="8" fill="#FFF700" opacity="0.6"/>
+  </g>
+  
+  <!-- Achievement badges -->
+  <g transform="translate(80, 150)">
+    <!-- 2nd place badge -->
+    <circle cx="0" cy="0" r="25" fill="#C0C0C0"/>
+    <text x="0" y="-8" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2nd</text>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">CodeZilla</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Hackathon</text>
+  </g>
+  
+  <g transform="translate(200, 150)">
+    <!-- 2nd place badge (BugFather) -->
+    <circle cx="0" cy="0" r="25" fill="#C0C0C0"/>
+    <text x="0" y="-8" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2nd</text>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">BugFather</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Debugging</text>
+  </g>
+  
+  <g transform="translate(320, 150)">
+    <!-- 4th place badge -->
+    <circle cx="0" cy="0" r="25" fill="#CD7F32"/>
+    <text x="0" y="-8" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">4th</text>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">InnovateYou</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Techathon</text>
+  </g>
+  
+  <!-- Competition elements -->
+  <g transform="translate(50, 220)">
+    <!-- Code symbol -->
+    <text x="0" y="0" font-family="Consolas, monospace" font-size="24" fill="white">&lt;/&gt;</text>
+    <text x="30" y="0" font-family="Arial, sans-serif" font-size="12" fill="white">Competitive</text>
+  </g>
+  
+  <g transform="translate(180, 220)">
+    <!-- Team symbol -->
+    <circle cx="0" cy="0" r="6" fill="white"/>
+    <circle cx="12" cy="0" r="6" fill="white"/>
+    <circle cx="24" cy="0" r="6" fill="white"/>
+    <text x="35" y="4" font-family="Arial, sans-serif" font-size="12" fill="white">Teamwork</text>
+  </g>
+  
+  <g transform="translate(290, 220)">
+    <!-- Innovation symbol -->
+    <path d="M0,0 L5,-10 L10,0 L5,5 Z" fill="#FFA500"/>
+    <circle cx="5" cy="-5" r="2" fill="#FFD700"/>
+    <text x="20" y="4" font-family="Arial, sans-serif" font-size="12" fill="white">Innovation</text>
+  </g>
+  
+  <!-- Confetti animation -->
+  <g>
+    <rect x="50" y="30" width="3" height="3" fill="#FF6B6B" transform="rotate(45 50 30)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,-20; 0,20; 0,40" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="150" y="40" width="3" height="3" fill="#4ECDC4" transform="rotate(45 150 40)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,-30; 0,30; 0,60" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="250" y="35" width="3" height="3" fill="#45B7D1" transform="rotate(45 250 35)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,-25; 0,25; 0,50" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="350" y="45" width="3" height="3" fill="#FFA07A" transform="rotate(45 350 45)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,-35; 0,35; 0,70" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Competition Achievements</text>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.8">Hackathons & Programming Contests</text>
+</svg>
