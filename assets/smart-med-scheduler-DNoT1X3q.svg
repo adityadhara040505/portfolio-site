@@ -1,0 +1,84 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a52;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#medGrad)"/>
+  
+  <!-- Medical cross background -->
+  <g transform="translate(200, 150)" opacity="0.1">
+    <rect x="-40" y="-10" width="80" height="20" fill="white"/>
+    <rect x="-10" y="-40" width="20" height="80" fill="white"/>
+  </g>
+  
+  <!-- Heart monitor -->
+  <g transform="translate(50, 80)">
+    <!-- Monitor screen -->
+    <rect x="0" y="0" width="300" height="120" rx="10" fill="#1a1a1a" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Heart rate line -->
+    <g stroke="#00ff88" stroke-width="2" fill="none">
+      <path d="M20,60 L60,60 L70,30 L80,90 L90,30 L100,60 L140,60 L150,40 L160,80 L170,40 L180,60 L220,60 L230,35 L240,85 L250,35 L260,60 L280,60">
+        <animate attributeName="d" 
+                 values="M20,60 L60,60 L70,30 L80,90 L90,30 L100,60 L140,60 L150,40 L160,80 L170,40 L180,60 L220,60 L230,35 L240,85 L250,35 L260,60 L280,60;
+                         M20,60 L60,60 L70,25 L80,95 L90,25 L100,60 L140,60 L150,35 L160,85 L170,35 L180,60 L220,60 L230,30 L240,90 L250,30 L260,60 L280,60;
+                         M20,60 L60,60 L70,30 L80,90 L90,30 L100,60 L140,60 L150,40 L160,80 L170,40 L180,60 L220,60 L230,35 L240,85 L250,35 L260,60 L280,60" 
+                 dur="1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Heart rate value -->
+    <text x="280" y="30" font-family="Consolas, monospace" font-size="16" fill="#00ff88">BPM: 72</text>
+    <text x="280" y="50" font-family="Consolas, monospace" font-size="14" fill="#61DAFB">Risk: LOW</text>
+  </g>
+  
+  <!-- Prediction model visualization -->
+  <g transform="translate(80, 220)">
+    <!-- Neural network nodes -->
+    <circle cx="0" cy="0" r="8" fill="#61DAFB"/>
+    <circle cx="60" cy="-15" r="6" fill="#F7931E"/>
+    <circle cx="60" cy="0" r="6" fill="#F7931E"/>
+    <circle cx="60" cy="15" r="6" fill="#F7931E"/>
+    <circle cx="120" cy="-8" r="6" fill="#98D8C8"/>
+    <circle cx="120" cy="8" r="6" fill="#98D8C8"/>
+    <circle cx="180" cy="0" r="8" fill="#48BB78"/>
+    
+    <!-- Connections -->
+    <g stroke="#ffffff" stroke-width="1" opacity="0.6">
+      <line x1="8" y1="0" x2="52" y2="-15"/>
+      <line x1="8" y1="0" x2="52" y2="0"/>
+      <line x1="8" y1="0" x2="52" y2="15"/>
+      <line x1="68" y1="-15" x2="112" y2="-8"/>
+      <line x1="68" y1="0" x2="112" y2="-8"/>
+      <line x1="68" y1="15" x2="112" y2="8"/>
+      <line x1="68" y1="-15" x2="112" y2="8"/>
+      <line x1="128" y1="-8" x2="172" y2="0"/>
+      <line x1="128" y1="8" x2="172" y2="0"/>
+    </g>
+    
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">KNN + LSTM</text>
+  </g>
+  
+  <!-- Calendar/scheduler icon -->
+  <g transform="translate(320, 220)">
+    <rect x="-15" y="-15" width="30" height="30" rx="3" fill="white"/>
+    <rect x="-12" y="-12" width="24" height="6" fill="#667eea"/>
+    <rect x="-10" y="-4" width="20" height="2" fill="#ccc"/>
+    <rect x="-10" y="0" width="15" height="2" fill="#ccc"/>
+    <rect x="-10" y="4" width="12" height="2" fill="#ccc"/>
+    <circle cx="-8" cy="-20" r="2" fill="#667eea"/>
+    <circle cx="8" cy="-20" r="2" fill="#667eea"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Smart Med Scheduler</text>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.8">AI-Powered Healthcare Management</text>
+</svg>
